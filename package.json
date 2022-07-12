@@ -1,0 +1,19 @@
+{
+  "name": "lambda-img-analysis",
+  "version": "1.0.0",
+  "description": "Function lambda to image analysis",
+  "main": "handler.js",
+  "author": {
+    "name": "Vinicius Freire",
+    "email": "viniciusfreiredev@gmail.com",
+    "url": "https://github.com/viniciussfreire"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciussfreire/lambda-img-analysis.git"
+  },
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
