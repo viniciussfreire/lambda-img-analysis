@@ -7,7 +7,22 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs14.x
+  iam:
+    role:
+      statements: 
+        - Effect: "Allow"
+          Action:
+            - rekognition:DetectLabels
+          Resource: "*"
+        - Effect: "Allow"
+          Action:
+            - translate:TranslateText
+          Resource: "*"
 
 functions:
-  hello:
-    handler: handler.hello
+  img-analysis:
+    handler: handler.main
+    events:
+      - http:
+          path: analyze
+          method: get
